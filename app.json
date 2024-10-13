@@ -1,0 +1,27 @@
+{
+  "name": "ROYEL-MD",
+  "description": "Javascript WhatsApp bot made by DILISHA GIMSHAN",
+  "logo": "https://telegra.ph/file/cad7038fe82e47f79c609.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "MONGODB": {
+      "description": "Put your mongodb url.",
+      "required": true
+    }
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
+
